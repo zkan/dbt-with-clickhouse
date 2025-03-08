@@ -1,2 +1,1 @@
-# dbt-with-clickhouse
-dbt with ClickHouse
+# dbt with ClickHouse
