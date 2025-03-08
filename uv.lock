@@ -351,8 +351,8 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "dbt-clickhouse" },
-    { name = "dbt-core" },
+    { name = "dbt-clickhouse", specifier = ">=1.8.9" },
+    { name = "dbt-core", specifier = ">=1.8.9" },
 ]
 
 [[package]]
