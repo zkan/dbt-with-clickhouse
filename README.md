@@ -7,6 +7,6 @@ uv sync
 ## Running ClickHouse
 
 ```bash
-cd cluster_2S_2R_ch_proxy
+cd cluster
 make up
 ```

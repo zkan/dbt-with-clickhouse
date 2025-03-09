@@ -5,7 +5,7 @@ services:
     container_name: clickhouse-01
     hostname: clickhouse-01
     networks:
-      cluster_2S_2R_ch_proxy:
+      cluster_ch_proxy:
         ipv4_address: 192.168.9.1
     volumes:
       - ${PWD}/fs/volumes/clickhouse-01/etc/clickhouse-server/config.d/config.xml:/etc/clickhouse-server/config.d/config.xml
@@ -21,7 +21,7 @@ services:
     container_name: clickhouse-02
     hostname: clickhouse-02
     networks:
-      cluster_2S_2R_ch_proxy:
+      cluster_ch_proxy:
         ipv4_address: 192.168.9.2
     volumes:
       - ${PWD}/fs/volumes/clickhouse-02/etc/clickhouse-server/config.d/config.xml:/etc/clickhouse-server/config.d/config.xml
@@ -37,7 +37,7 @@ services:
     container_name: clickhouse-03
     hostname: clickhouse-03
     networks:
-      cluster_2S_2R_ch_proxy:
+      cluster_ch_proxy:
         ipv4_address: 192.168.9.3
     volumes:
       - ${PWD}/fs/volumes/clickhouse-03/etc/clickhouse-server/config.d/config.xml:/etc/clickhouse-server/config.d/config.xml
@@ -53,7 +53,7 @@ services:
     container_name: clickhouse-keeper-01
     hostname: clickhouse-keeper-01
     networks:
-      cluster_2S_2R_ch_proxy:
+      cluster_ch_proxy:
         ipv4_address: 192.168.9.5
     volumes:
       - ${PWD}/fs/volumes/clickhouse-keeper-01/etc/clickhouse-keeper/keeper_config.xml:/etc/clickhouse-keeper/keeper_config.xml
@@ -65,7 +65,7 @@ services:
     container_name: ch-proxy
     hostname: ch-proxy
     networks:
-      cluster_2S_2R_ch_proxy:
+      cluster_ch_proxy:
         ipv4_address: 192.168.9.10
     ports:
       - "127.0.0.1:443:443"
@@ -90,7 +90,7 @@ services:
       VITE_CLICKHOUSE_PASS: ""
 
 networks:
-  cluster_2S_2R_ch_proxy:
+  cluster_ch_proxy:
     driver: bridge
     ipam:
       config:

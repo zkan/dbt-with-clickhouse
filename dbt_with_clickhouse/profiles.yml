@@ -6,5 +6,5 @@ dbt_with_clickhouse:
       host: localhost
       port: 8123
       user: default
-      cluster: cluster_2S_2R
+      cluster: my_cluster
   target: dev
