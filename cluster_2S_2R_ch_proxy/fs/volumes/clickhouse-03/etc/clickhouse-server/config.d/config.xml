@@ -29,18 +29,15 @@
                     <host>clickhouse-01</host>
                     <port>9000</port>
                 </replica>
-            </shard>
-            <shard>
-                <internal_replication>true</internal_replication>
                 <replica>
-                    <host>clickhouse-02</host>
+                    <host>clickhouse-03</host>
                     <port>9000</port>
                 </replica>
             </shard>
             <shard>
                 <internal_replication>true</internal_replication>
                 <replica>
-                    <host>clickhouse-03</host>
+                    <host>clickhouse-02</host>
                     <port>9000</port>
                 </replica>
             </shard>
@@ -53,7 +50,7 @@
         </node>
     </zookeeper>
     <macros>
-        <shard>03</shard>
-        <replica>01</replica>
+        <shard>01</shard>
+        <replica>02</replica>
     </macros>
 </clickhouse>
