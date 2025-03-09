@@ -19,7 +19,6 @@ clusters:
         'clickhouse-01:8123',
         'clickhouse-02:8123',
         'clickhouse-03:8123',
-        'clickhouse-04:8123',
       ]
     users:
       - name: 'default'
