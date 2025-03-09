@@ -1,6 +1,7 @@
 {{
     config(
         materialized="distributed_table",
+        engine="ReplicatedMergeTree('/clickhouse/tables/{uuid}/{shard}', '{replica}')",
         order_by="id"
     )
 }}
