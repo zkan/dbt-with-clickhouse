@@ -16,6 +16,16 @@ with source_data as (
     select 4 as id
     union all
     select 5 as id
+    union all
+    select 6 as id
+    union all
+    select 7 as id
+    union all
+    select 8 as id
+    union all
+    select 9 as id
+    union all
+    select 10 as id
 
 )
 
